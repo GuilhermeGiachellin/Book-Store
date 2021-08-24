@@ -6,7 +6,7 @@ import {
   Link,
 } from 'react-router-dom';
 import Categories from './categories.js';
-import Books from './books.js';
+import List from './books/list';
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
           <Categories />
         </Route>
         <Route path="/">
-          <Books />
+          <List />
         </Route>
       </Switch>
     </Router>
