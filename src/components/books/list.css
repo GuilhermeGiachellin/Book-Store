@@ -31,6 +31,13 @@
   color: #4386bf;
 }
 
+.input_ctn > button {
+  width: 11.5rem;
+  height: 2.813rem;
+  background-color: #0290ff;
+  color: #fff;
+}
+
 .btn_ctn > button {
   border: none;
   background: none;
@@ -38,6 +45,41 @@
   font-size: 0.875rem;
 }
 
+.input_ctn > button:hover {
+  background-color: blue;
+}
+
 .btn_ctn > button:hover {
   color: blue;
+}
+
+.form_title {
+  width: 10.875rem;
+  height: 1.5rem;
+  margin: 1.813rem 32.75rem 1.188rem 0;
+  font-size: 1.25rem;
+}
+
+form {
+  width: 75vw;
+  margin: auto;
+}
+
+.input_ctn {
+  display: flex;
+  flex-direction: row;
+  width: 75rem;
+  align-items: center;
+}
+
+.book_input {
+  margin-right: 2.15rem;
+  width: 41.5rem;
+  height: 2.813rem;
+}
+
+.category_input {
+  margin-right: 2.15rem;
+  width: 17.813rem;
+  height: 2.813rem;
 }
