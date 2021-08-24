@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import Books from './books.js';
+import Form from './form.js';
 import './list.css';
 
 function List() {
@@ -23,15 +24,8 @@ function List() {
                <Books name={book.title} author={book.author} genre={book.genre} key={book.id}/>
             ))}
         </ul>
-        <form>
-              <h1 className="form_title">Add Books</h1>
-              <div className="input_ctn">
-              <input placeholder="Book Title" className="book_input"></input>
-              <input placeholder="Category" className="category_input"></input>
-              <button type="submit">ADD BOOK</button>
-              </div>
-        </form>
-        </div>
+          <Form />
+    </div>
   );
 }
 
