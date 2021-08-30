@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
-function Form() {
-  return (
+const Form = () => (
         <form>
         <h1 className="form_title">Add Books</h1>
         <div className="input_ctn">
@@ -9,7 +8,6 @@ function Form() {
         <button type="submit">ADD BOOK</button>
         </div>
         </form>
-  );
-}
+);
 
 export default Form;

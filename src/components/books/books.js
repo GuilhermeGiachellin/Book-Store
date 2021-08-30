@@ -1,14 +1,14 @@
-/* eslint-disable no-unused-vars */
-function Books({
-  name, author, genre, id,
-}) {
-  return (
-        <li key={id} className="list_cnt">
+import React from 'react';
+
+export default class Books extends React.Component {
+  render() {
+    return (
+        <li key={this.props.id} className="list_cnt">
             <div>
                 <div className="info_ctn">
-                <span className="genre">{genre}</span>
-                <span className="title">{name}</span>
-                <span className="author">{author}</span>
+                <span className="genre">{this.props.genre}</span>
+                <span className="title">{this.props.name}</span>
+                <span className="author">{this.props.author}</span>
                 </div>
                 <div className="btn_ctn">
                 <button>Comments</button>
@@ -17,7 +17,6 @@ function Books({
                 </div>
             </div>
         </li>
-  );
+    );
+  }
 }
-
-export default Books;

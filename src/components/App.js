@@ -6,10 +6,9 @@ import {
   Link,
 } from 'react-router-dom';
 import Categories from './categories.js';
-import List from './books/list';
+import List from './books/list.js';
 
-function App() {
-  return (
+const App = () => (
       <Router>
       <header>
         <h1>
@@ -35,7 +34,6 @@ function App() {
         </Route>
       </Switch>
     </Router>
-  );
-}
+);
 
 export default App;
