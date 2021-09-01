@@ -8,9 +8,9 @@ const Form = () => {
   const addHandler = (e) => {
     e.preventDefault();
     const newBook = {
-      id: uuidv4(),
-      bookTitle: e.target.title.value,
-      bookCategory: e.target.category.value,
+      item_id: uuidv4(),
+      title: e.target.title.value,
+      category: e.target.category.value,
     };
     dispach(addBook(newBook));
   };
