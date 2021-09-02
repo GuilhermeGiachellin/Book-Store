@@ -57,7 +57,7 @@ hr {
   font-size: 0.875rem;
   color: #4386bf;
   font-weight: 300;
-  width: 6.688rem;
+  width: fit-content;
   height: 1.188rem;
   margin: 0.25rem 0 0;
 }
