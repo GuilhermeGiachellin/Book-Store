@@ -17,7 +17,7 @@ const Form = () => {
 
   return (
     <form onSubmit={addHandler}>
-       <h1 className="form_title">Add Books</h1>
+       <h1 className="form_title">ADD NEW BOOK</h1>
          <div className="input_ctn">
            <input placeholder="Book Title" className="book_input" name="title"></input>
            <input placeholder="Category" className="category_input" name="category"></input>

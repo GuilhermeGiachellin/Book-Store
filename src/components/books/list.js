@@ -22,6 +22,7 @@ const List = () => {
                key={book.item_id}/>
             ))}
         </ul>
+        <hr />
           <Form />
     </div>
   );
