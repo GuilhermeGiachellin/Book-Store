@@ -4,15 +4,15 @@ import { useDispatch } from 'react-redux';
 import { addBook } from '../../redux/books/books.js';
 
 const Form = () => {
-  const dispach = useDispatch();
+  const dispatch = useDispatch();
   const addHandler = (e) => {
     e.preventDefault();
     const newBook = {
       item_id: uuidv4(),
       title: e.target.title.value,
-      category: e.target.category.value,
+      category: e.target.author.value,
     };
-    dispach(addBook(newBook));
+    dispatch(addBook(newBook));
   };
 
   return (
@@ -20,7 +20,7 @@ const Form = () => {
        <h1 className="form_title">ADD NEW BOOK</h1>
          <div className="input_ctn">
            <input placeholder="Book Title" className="book_input" name="title"></input>
-           <input placeholder="Category" className="category_input" name="category"></input>
+           <input placeholder="Author" className="category_input" name="author"></input>
            <button type="submit">ADD BOOK</button>
           </div>
      </form>

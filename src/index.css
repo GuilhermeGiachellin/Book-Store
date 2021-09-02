@@ -27,9 +27,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 95%;
-  height: 15vh;
-  padding: 0 2.5%;
+  height: 12vh;
   background-color: #fff;
   margin-bottom: 2.375rem;
 }
@@ -38,6 +36,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: 2.5%;
 }
 
 .title_nav_cnt > h1 {
@@ -81,4 +80,5 @@ nav > ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 2.5%;
 }
