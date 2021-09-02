@@ -48,6 +48,7 @@ export const removeBook = (payload) => async (dispatch) => {
     type: REMOVE_BOOK,
     payload,
   });
+  window.location.reload();
 };
 
 // REDUCER

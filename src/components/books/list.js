@@ -18,10 +18,11 @@ const List = () => {
     <div>
         <ul>
             {bookList.map((book) => (
-               <Books name={book.title} genre={book.category} id={book.item_id}
+               <Books name={book.title} author={book.category} id={book.item_id}
                key={book.item_id}/>
             ))}
         </ul>
+        <hr />
           <Form />
     </div>
   );

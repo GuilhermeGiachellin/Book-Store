@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+ul {
+  padding: 0;
+}
+
 .list_cnt {
-  width: 75rem;
+  display: flex;
+  flex-direction: row;
+  width: 75vw;
   height: 10.625rem;
   margin: 0.938rem auto;
   padding: 2rem 9.188rem 1.625rem 1.688rem;
@@ -14,35 +23,81 @@
   margin: 2rem 0;
 }
 
+hr {
+  width: 85vw;
+  height: 0.125rem;
+  margin: 2.5rem auto;
+  border: solid 1px;
+  border-color: #e8e8e8;
+}
+
 .genre {
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.875rem;
   color: #121212;
   opacity: 0.5;
+  font-weight: bold;
+  width: 3.063rem;
+  height: 1.125rem;
+  margin: 0 2.438rem 0 0;
 }
 
 .title {
-  font-size: 1.5rem;
+  font-family: 'RobotoSlab', sans-serif;
+  width: 12.313rem;
+  height: 1.813rem;
+  font-size: 1.375rem;
+  letter-spacing: -0.2px;
   color: #121212;
   font-weight: bold;
 }
 
 .author {
+  font-family: 'RobotoSlab', sans-serif;
   font-size: 0.875rem;
   color: #4386bf;
+  font-weight: 300;
+  width: fit-content;
+  height: 1.188rem;
+  margin: 0.25rem 0 0;
 }
 
 .input_ctn > button {
-  width: 11.5rem;
+  font-family: 'RobotoSlab', sans-serif;
+  width: 15.5rem;
   height: 2.813rem;
   background-color: #0290ff;
   color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  border-style: none;
 }
 
 .btn_ctn > button {
   border: none;
   background: none;
   color: #4386bf;
+  font-family: 'RobotoSlab', sans-serif;
   font-size: 0.875rem;
+}
+
+.chapter_info > button {
+  width: 11.5rem;
+  height: 2.063rem;
+  margin: 1rem 0 0.563rem 3.688rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  font-family: 'RobotoSlab', sans-serif;
+  color: #fff;
+  font-size: 0.813rem;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+  border-style: none;
+}
+
+.chapter_info > button:hover {
+  background-color: blue;
 }
 
 .input_ctn > button:hover {
@@ -54,32 +109,127 @@
 }
 
 .form_title {
-  width: 10.875rem;
+  width: 15.875rem;
   height: 1.5rem;
   margin: 1.813rem 32.75rem 1.188rem 0;
   font-size: 1.25rem;
+  color: #888;
+  letter-spacing: -0.18px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
 form {
-  width: 75vw;
+  width: 85vw;
   margin: auto;
+  margin-bottom: 10vh;
 }
 
 .input_ctn {
   display: flex;
   flex-direction: row;
-  width: 75rem;
+  width: 85vw;
   align-items: center;
 }
 
 .book_input {
   margin-right: 2.15rem;
-  width: 41.5rem;
+  width: 51.5vw;
   height: 2.813rem;
+  border: 1px solid #e8e8e8;
+  padding-left: 1.5rem;
 }
 
 .category_input {
   margin-right: 2.15rem;
-  width: 17.813rem;
+  width: 20.813vw;
   height: 2.813rem;
+  border: 1px solid #e8e8e8;
+  padding-left: 1.5rem;
+}
+
+.text_ctn {
+  width: 35rem;
+  margin: 0;
+}
+
+.oval {
+  width: 4.813rem;
+  height: 4.813rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 7px;
+  border-color: #307bbe #307bbe #307bbe #fafafa;
+}
+
+.vr {
+  margin: 0 0.8rem;
+  border: 1px solid #e8e8e8;
+}
+
+.progress_vr {
+  height: 5rem;
+  margin: 0 0.8rem;
+  border: 1px solid #e8e8e8;
+}
+
+.progress_cnt {
+  width: 40rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.oval_cnt {
+  display: flex;
+}
+
+.progress_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.porcentage {
+  font-size: 2rem;
+  width: 4.25rem;
+  height: 2.438rem;
+  margin: 0.063rem 5.75rem 0 0.688rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.completed {
+  width: 5rem;
+  height: 1.125rem;
+  margin: 0.438rem 4.938rem 0.75rem 0.75rem;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+}
+
+.chapter_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.current_chapter {
+  width: 12.875rem;
+  height: 1.125rem;
+  margin: 0.063rem 3.625rem 0 3.688rem;
+  opacity: 0.5;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+}
+
+.chapter_name {
+  width: fit-content;
+  height: 1.313rem;
+  margin: 0.438rem 6.813rem 1rem 3.688rem;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: -0.4px;
 }
